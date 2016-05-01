@@ -128,7 +128,7 @@ Board.prototype.deadSquareAtTop = function(board) {
 
 Board.prototype.completeRows = function () {
   var completeRows = [];
-  for (var r = 4; r < 24; r++) {
+  for (var r = 23; r > 4; r--) {
     var complete = true
     for (var c = 0; c < 10; c++) {
       if (this.grid[r][c] != "C") {
